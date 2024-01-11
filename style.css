@@ -1,0 +1,115 @@
+:root{
+  --color-title: #4b4b4b;
+  /* --color-text: #8d8d8d; */
+  --color-text: #353535;
+  --color-caption: #9f9f9f;
+  --font-caption: .8rem;
+  --font-checklist: .9rem;
+  --color-white: #fff;
+  --font-icon:  .7rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+section.mobile-title , .mobile-title .icon{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+}
+.mobile-title span{
+  margin: 0 1rem;
+}
+.icon span{
+  margin: 0 .1rem;
+}
+.mobile-template{
+  position: absolute;
+  top: 50%;
+   right: 50%;
+  transform: translate(50%,-50%);
+}
+.mobile-template img{
+  height: 100vh;
+}
+.content-mobile {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  height: 77vh;
+  overflow-y: auto;
+}
+.content-mobile span{
+  font-size: var(--font-icon);
+}
+.text-header{
+  line-height: 1.8rem;
+}
+.content-mobile h5{
+  color: var(--color-title);
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+section.incomplete , section.complete{
+  margin-right: -8px;
+}
+.incomplete h3 , .complete h3{
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+.text-incomplate , .text-complate {
+  margin: .3rem .2rem;
+}
+.text-incomplate p , .text-complate p{
+  color: var(--color-text);
+  font-size: var(--font-checklist);
+  line-height: 1.3rem;
+}
+.text-complate p{
+  text-decoration: line-through ;
+  color: var(--color-caption);
+}
+.text-incomplate span{
+  color: var(--color-caption);
+  font-size: var(--font-caption);
+}
+.check-list{
+  display: flex;
+  align-items: baseline;
+}
+input[type="checkbox"]{
+  accent-color: var(--color-white);
+}
+::-webkit-scrollbar {
+  width: .1rem;
+}
+/* حالت عادی */
+::-webkit-scrollbar-thumb {
+  opacity: 0;
+}
+::-webkit-scrollbar-thumb:focus {
+  opacity: 1;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.btn{
+  width: 40px;
+  height: 40px;
+  background-color: #5f59f7;
+  border: none;
+  border-radius: 50%;
+  position: sticky;
+  bottom: 1rem;
+  left: 10rem;
+}
+.btn span{
+  color: #fff;
+  font-size: 1.5rem;
+}
