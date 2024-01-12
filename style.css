@@ -11,6 +11,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
   font-family: 'Roboto', sans-serif;
@@ -28,10 +29,17 @@ section.mobile-title , .mobile-title .icon{
   margin: 0 .1rem;
 }
 .mobile-template{
-  position: absolute;
+  /* position: absolute;
   top: 50%;
    right: 50%;
   transform: translate(50%,-50%);
+  height: 100vh;
+  overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
 .mobile-template img{
   height: 100vh;
@@ -43,7 +51,7 @@ section.mobile-title , .mobile-title .icon{
   transform: translate(50%,-50%);
   height: 77vh;
   overflow-y: auto;
-  width: 33%;
+  max-width: 34vh;
 }
 .content-mobile span{
   font-size: var(--font-icon);
@@ -55,9 +63,6 @@ section.mobile-title , .mobile-title .icon{
   color: var(--color-title);
     font-weight: 600;
     font-size: 0.7rem;
-}
-section.incomplete , section.complete{
-  /* margin-right: -8px; */
 }
 .incomplete h3 , .complete h3{
   padding: 0.6rem 0;
@@ -114,3 +119,33 @@ input[type="checkbox"]{
   color: #fff;
   font-size: 1.5rem;
 }
+/* @media screen and (max-width: 1200px){
+  .content-mobile{
+    background-color: blue;
+  }
+} */
+@media screen and (max-width: 800px){
+  .content-mobile{
+    width: 100%;
+  }
+}
+/* @media screen and (max-width: 600px){
+  .text-incomplate , .text-complate {
+    margin: 1.1rem 0.2rem;
+  }
+  .text-incomplate p, .text-complate p{
+    font-size: 1rem;
+  }
+  .incomplete h3, .complete h3 {
+    font-size: 1.2rem;
+}
+.content-mobile{
+  background-color: red;
+}
+}
+@media screen and (max-width: 360px){
+  .content-mobile{
+    background-color: #5f59f7;
+    width: 100%;
+  }
+} */
