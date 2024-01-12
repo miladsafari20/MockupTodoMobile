@@ -46,10 +46,10 @@ section.mobile-title , .mobile-title .icon{
 }
 .content-mobile {
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   right: 50%;
-  transform: translate(50%,-50%);
-  height: 77vh;
+  transform: translate(50%,-50%); */
+  height: 75vh;
   overflow-y: auto;
   max-width: 34vh;
 }
@@ -70,7 +70,7 @@ section.mobile-title , .mobile-title .icon{
   color: var(--color-text);
 }
 .text-incomplate , .text-complate {
-  margin: .3rem .2rem;
+  margin: 1rem .2rem;
 }
 .text-incomplate p , .text-complate p{
   color: var(--color-text);
